@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
+    <title>Louis Marie Toussaint Tona - Resume</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
@@ -12,52 +12,73 @@
 
     <!-- Header Section -->
     <header>
+        
+        <!-- Button click Navigation Setup -->
         <nav>
-            <ul>
+            <ul id="menunav" class="hiddennav">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#academics">Academics</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button onclick="togglenav()"></button>
         </nav>
-        <h1>Your Name</h1>
-        <p>Creative Developer | Problem Solver | Team Player</p>
+        <h1 id="myname">Louis Marie Toussaint Tona</h1>
+        <span id="qualities">
+            <pre>Creative Developer | </pre>
+            <pre>Problem Solver | </pre>
+            <pre>Team Player</pre>
+            <pre></pre>
+        </span>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Brief description about your background, passion, and career goals.</p>
+        <p>I am an ALU student that likes sports,entertainement and technology. My career goals or mission would be to create an infrastructural landscape that promotes and aids technological advancement.</p>
+    </section>
+
+    <!-- Academics Section -->
+     <section id="academics">
+        <h2>Academics</h2>
+        <ol>
+            <li>APE Rugunga nursery</li>
+            <li>EPMA Primary School</li>
+            <li>PSSV O'level</li>
+            <li>SIHS A'level</li>
+            <li>ALU BSE Bachelor's</li> 
+        </ol>
+     </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <article>
+            <h3>Sales Agent- CCI Rwanda</h3>
+            <p>Kigali | 1 year</p>
+            <p>Managed to have the highest perfomance from the 1st week to the 3rd week of August 2024.</p>
+        </article>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Version Control (Git)</li>
-            <li>Project Management</li>
+            <li>Project Management.</li>
+            <li>Communication Skills.</li>
+            <li>Software development skills.</li>
+            <li>Time management.</li>
         </ul>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <article>
-            <h3>Job Title - Company Name</h3>
-            <p>Location | Duration</p>
-            <p>Brief description of your role and achievements in the position.</p>
-        </article>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
-            <h3>Project Title</h3>
-            <p>Short description of the project and your contributions.</p>
+            <h3>Responsive Web Design</h3>
+            <p>Project of creating an interactive and responsive Website of your resume.</p>
         </div>
     </section>
 
@@ -75,6 +96,7 @@
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Send</button>
+            <!-- Label Input form -->
         </form>
     </section>
 
